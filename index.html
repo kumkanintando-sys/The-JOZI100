@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JOZI 100 Journal — stories shaping Johannesburg.">
+  <title>JOZI 100 Journal | Johannesburg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">INDEPENDENT JOHANNESBURG PUBLICATION <span>EST. 2026</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html"><span>JOZI 100</span><small>THE JOURNAL</small></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#latest">Latest</a><a href="#education">Education</a><a href="#business">Business</a>
+      <a href="#people">People</a><a href="#recognition">Recognition</a><a href="#about">About</a>
+    </nav>
+    <a class="header-link" href="mailto:editor@jozi100.co.za">Contact the Journal ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE CITY. THE PEOPLE. THE EXCELLENCE.</p>
+        <h1>Stories shaping<br>the future of <em>Johannesburg.</em></h1>
+        <p class="hero-intro">A closer look at the schools, businesses, people and ideas moving our city forward.</p>
+        <a class="button button-gold" href="#latest">Explore the Journal <span>↗</span></a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1400&q=85" alt="Modern Johannesburg-inspired city architecture">
+        <div class="image-caption">JOHANNESBURG, SOUTH AFRICA <span>01 / THE CITY</span></div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>EDUCATION</span><i>✳</i><span>BUSINESS</span><i>✳</i><span>PEOPLE</span><i>✳</i><span>COMMUNITY</span><i>✳</i><span>EXCELLENCE</span></section>
+
+    <section class="section" id="latest">
+      <div class="section-heading"><div><p class="eyebrow">THE EDITOR'S DESK</p><h2>Latest stories</h2></div><a class="text-link" href="#latest">View all stories ↗</a></div>
+      <div class="story-grid" id="latestStories">
+        <article class="story-card story-featured">
+          <a href="article.html?id=welcome"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85" alt="Students learning in a classroom"></a>
+          <div class="story-meta"><span>EDUCATION</span><span>EDITOR'S PICK</span></div>
+          <h3><a href="article.html?id=welcome">The next chapter of Johannesburg's education story</a></h3>
+          <p>A city-wide conversation about the institutions, educators and learners shaping tomorrow.</p>
+          <a class="text-link" href="article.html?id=welcome">Read the story ↗</a>
+        </article>
+        <article class="story-card">
+          <a href="#business"><img src="https://images.unsplash.com/photo-1490650404312-aac70f5a3e71?auto=format&fit=crop&w=900&q=85" alt="Contemporary business workspace"></a>
+          <div class="story-meta"><span>BUSINESS</span><span>COMING SOON</span></div>
+          <h3>Ideas and enterprise changing the city</h3><p>Meet the people building the next generation of Johannesburg businesses.</p>
+        </article>
+        <article class="story-card">
+          <a href="#people"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85" alt="People collaborating"></a>
+          <div class="story-meta"><span>PEOPLE</span><span>COMING SOON</span></div>
+          <h3>The people behind the progress</h3><p>Conversations with community builders, leaders and changemakers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="split-feature" id="education">
+      <div class="split-image"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=85" alt="School building"></div>
+      <div class="split-copy"><p class="eyebrow">OUR EDUCATION DESK</p><h2>More than a school list.</h2><p>Discover the institutions, educators and learners making a difference across Johannesburg. Our school profiles bring together verified information, interviews and stories worth sharing.</p><a class="button button-dark" href="#schools">Explore education <span>↗</span></a></div>
+    </section>
+
+    <section class="section directory-section" id="schools">
+      <div class="section-heading"><div><p class="eyebrow">DISCOVER JOHANNESBURG</p><h2>School directory</h2></div><span class="muted">A growing city-wide directory</span></div>
+      <div class="school-grid" id="schoolGrid" hidden></div>
+      <div class="directory-placeholder" id="directoryPlaceholder"><div class="directory-mark">J<span>100</span></div><div><h3>Find a school. Learn its story.</h3><p>School profiles and directory listings will appear here as our research is verified and the network grows.</p></div><a class="text-link" href="mailto:editor@jozi100.co.za">Suggest a school ↗</a></div>
+    </section>
+
+    <section class="recognition" id="recognition">
+      <div class="recognition-inner"><p class="eyebrow">A JOZI 100 INITIATIVE</p><h2>Recognising the work<br>that moves us forward.</h2><p>Celebrating excellence, leadership and positive impact across Johannesburg. Recognition will be based on published criteria and a transparent process.</p><ul class="recognition-list" id="recognitionPublic" hidden></ul><a class="button button-gold" href="mailto:editor@jozi100.co.za?subject=JOZI%20100%20Recognition">Discover recognition <span>↗</span></a></div>
+      <div class="recognition-seal"><span>JOZI</span><strong>100</strong><small>EXCELLENCE<br>IN JOHANNESBURG</small></div>
+    </section>
+
+    <section class="section interview-section" id="people">
+      <div class="section-heading"><div><p class="eyebrow">IN THEIR OWN WORDS</p><h2>Conversations that matter</h2></div><a class="text-link" href="mailto:editor@jozi100.co.za?subject=Interview%20proposal">Suggest an interview ↗</a></div>
+      <div class="interview-banner"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1400&q=85" alt="Speaker at a public event"><div><p class="eyebrow">THE JOZI 100 INTERVIEW SERIES</p><h3>Every city has a story.<br>We make room for its voices.</h3><p>Meet educators, founders, artists, organisers and people creating meaningful change.</p></div></div>
+      <div class="story-grid interview-grid" id="interviewGrid" hidden></div>
+    </section>
+    <section class="advertise-strip" id="business"><div><p class="eyebrow">PARTNER WITH THE JOURNAL</p><h2>Put your brand in the conversation.</h2></div><a class="button button-dark" href="mailto:editor@jozi100.co.za?subject=Advertising%20enquiry">Advertising enquiries ↗</a></section>
+  </main>
+  <footer id="about"><a class="wordmark footer-mark" href="#"><span>JOZI 100</span><small>THE JOURNAL</small></a><p>Independent stories. Johannesburg perspectives.</p><div class="footer-links"><a href="mailto:editor@jozi100.co.za">Contact</a><a href="mailto:editor@jozi100.co.za?subject=Submit%20a%20story">Submit a story</a><a href="mailto:editor@jozi100.co.za?subject=Advertising">Advertise</a><a href="dashboard.html">Admin</a></div><small class="copyright">© 2026 JOZI 100 Journal. All rights reserved.</small></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
